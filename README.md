@@ -16,7 +16,7 @@
 
 1. Клонируйте репозиторий:
 
-```git clone https://github.com/your-username/rick-and-morty-graphql-api.git```
+```git clone https://github.com/textil24/backend-rickandmorty.git```
 
 2. Установка зависимостей
 
