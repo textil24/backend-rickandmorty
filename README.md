@@ -26,7 +26,7 @@
 
 ```npm run start```
 
-4. Создать свой .env файл
+4. Создать свой .env файл в корне проекта
 
 ```
 POSTGRES_USER=YOUR_USER
