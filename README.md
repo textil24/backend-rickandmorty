@@ -25,3 +25,13 @@
 3. Запуск проекта
 
 ```npm run start```
+
+4. Создать свой .env файл
+
+```
+POSTGRES_USER=YOUR_USER
+POSTGRES_PASSWORD=YOUR_PASSWORD
+POSTGRES_DB=YOUR_DB
+
+DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}?schema=public&sslmode=prefer
+```
