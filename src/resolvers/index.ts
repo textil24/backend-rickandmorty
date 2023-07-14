@@ -1,16 +1,13 @@
-import { PrismaClient } from "@prisma/client"
-
-const prisma = new PrismaClient()
-
 export const resolvers = {
     Query: {
-        characters: () => {
-            return prisma.character.findMany()
+        characters: (parent, args, { prisma }) => {
+            return prisma().character.findMany()
         }
     },
     Mutation: {
-        createCharacter: async (parent, args, context, info) => {
-            const createdCharacter = await prisma.character.create({
+        createCharacter: async (parent, args, { prisma }) => {
+            console.log('context', prisma)
+            const createdCharacter = await prisma().character.create({
                 data: {
                     image: args.input.image,
                     name: args.input.name,
